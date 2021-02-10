@@ -12,7 +12,7 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: false
           ref: refs/heads/main
-          path: ./.github/actions/hello
+          # path: ./.github/actions/hello
       - run: ls -la ./.github/
       - uses: ./.github/actions/hello
         with:
