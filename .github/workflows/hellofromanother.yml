@@ -12,6 +12,7 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: false
           path: ./.github/actions/hello
+      - run: ls -la ./.github/
       - uses: ./.github/actions/hello
         with:
           who-to-greet: "Mona the Octocat"
