@@ -11,6 +11,7 @@ jobs:
           repository: WtfJoke/hello-world-docker-action
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: false
+          ref: refs/heads/main
           path: ./.github/actions/hello
       - run: ls -la ./.github/
       - uses: ./.github/actions/hello
